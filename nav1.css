@@ -1,0 +1,575 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+
+}
+
+.container{
+
+    width: 1280px;
+    margin: auto;
+
+}
+
+.nav_checkbox{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 0px;
+
+}
+
+.logo{
+
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+
+}
+
+.tab-nav{
+
+    outline: none;
+    display: none;
+
+}
+
+.label{
+
+    display: none;
+    color: white;
+
+}
+
+.burger{
+
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+
+}
+
+.content_nav{
+
+    grid-column: 3;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.content_nav li{
+
+    display: inline-block;
+    padding-right: 10px;
+
+}
+
+.content_nav li a{
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+
+}
+
+.content_nav li a::after{
+
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform-origin: right;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.5s;
+
+}
+
+.content_nav li a:hover::after{
+
+    transform: scale(1, 1);
+
+}
+                            /* Hero Section  */
+.content_section{
+
+    /* height: 120vh; */
+    height: 650px;
+    background-image: url(eduford_img/car.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    /* justify-items: center; */
+    align-items: center;
+
+
+}
+
+.heading{
+    color: white;
+    font-size: 20px;
+    /* margin: 0px 73px; */
+   
+}
+
+.heading > h4{
+    margin: 0px 73px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.hero-heading2{
+    margin: 0px 73px;
+    font-family: 'Baloo Bhai 2', cursive;
+
+    
+}
+span{
+    text-align: center;
+    color: white;
+    margin: 0px 43px;
+}
+span:hover{
+    /* text-decoration: underline red 3px; */
+    color: red;
+}
+
+.heading > p{
+    margin: 0px 73px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+/* Button  */
+.btn-break{
+    display: none;
+}
+.button{
+    margin: 11px 73px;
+}
+
+.btn{
+    border: 2px solid gray;
+    border-radius: 6px;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 5px ;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(21 46 44);
+}
+
+    
+/* Rental Vehicles Section  */
+
+.rental-vic{
+    /* background-color: green; */
+    margin: 63px 43px;
+}
+
+.rental-vic > h1{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-decoration: underline;
+    
+}
+.rent{
+    /* background-color: pink; */
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px;
+}
+
+.opt1{
+    background-color: hotpink;
+    border-radius: 10px;
+    background: url(car/op\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.opt2{
+    background-color: lightseagreen;
+    border-radius: 10px;
+    background: url(car/op\ \(2\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.opt3{
+    background-color: lightskyblue;
+    border-radius: 10px;
+    background: url(car/op\ \(3\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#rent-h4{
+    display: none;
+    font-size: 20px;
+    margin-top: 144px;
+    color: white;
+}
+
+.hide{
+    display: none;
+    display: none;
+    font-size: 20px;
+    margin-top: 144px;
+    color: white;
+}
+
+.opt1:hover{
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(car/op\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+.opt2:hover{
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(car/op\ \(2\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;  
+    display: block;
+}
+.opt3:hover{
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(car/op\ \(3\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+            /* Discount section  */
+
+.sale{
+    /* background-color: violet; */
+    
+}
+.discount{
+    /* border: 2px solid red; */
+    height: 250px;
+    background: url(car/sale.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+.discount >h1{
+    text-align: center;
+    margin-top: 41px;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.discount >p{
+    text-align: center;
+   
+    color: white;
+    font-size: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.button-sale{
+    text-align: center
+}
+
+
+                /* car_categories */
+.car_categories{
+    /* border: 2px solid yellow; */
+    margin: 20px;
+}
+
+.car_categories > h1{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-decoration: underline;
+}
+.category{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 200px 200px;
+    grid-gap: 25px;
+}
+.car1{
+    /* background-color: wheat; */
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 2;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(car/car.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.car-heading{
+    text-align: center;
+    margin-top: 337px;
+    margin-left: 16px;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.para{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.para-auto{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.car2{
+    /* background-color: lightgray; */
+    background:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(car/car1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.car3{
+    /* background-color: lightsteelblue; */
+    background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(car/car2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.car-heading-auto{
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+.car4{
+    /* background-color: lightseagreen; */
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(car/car3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+}
+.car5{
+    /* background-color: lightblue; */
+    background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(car/car4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    
+}
+
+
+                            /* rent-car */
+
+.rent-car{
+    /* background-color: brown; */
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(car/rent1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 340px;
+    margin: 50px 25px;
+    border-radius: 10px;
+}
+
+/* .give-rent{
+    border: 2px solid green;
+    width: 50%;
+    margin: 20px auto;
+
+} */
+.box{
+    /* border: 2px solid green; */
+    width: 50%;
+    margin: 20px auto;
+    padding: 16px 0px;
+}
+
+.para-auto-rent{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+                        /* main-footer */
+
+                        .main-footer{
+                            /* border: 3px solid grey; */
+                            background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(eduford_img/car.jpg) no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        
+                        .footer{
+                            display: grid;
+                            grid-template-columns: repeat(4,1fr);
+                        
+                        }
+                        
+                        .inner-sec1{
+                            /* background-color: lightblue; */
+                            justify-content: center;
+                        }
+                        .img-footer{
+                            margin: 13px auto;
+                            padding: 6px 76px;
+                        }
+                        
+                        .inner-sec1 > p{
+                            text-align: center;
+                            color: white;
+                            font-size: 14px;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                        .inner-sec2{
+                            /* background-color: lightskyblue; */
+                            text-align: center;
+                            color: white;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                        .inner-sec3{
+                            /* background-color: lightpink; */
+                            text-align: center;
+                            color: white;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                        .inner-sec4{
+                            /* background-color: lightgreen; */
+                            text-align: center;
+                            color: white;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                        
+
+                        .copyright{
+                            /* border: 2px solid red; */
+                            height: 30px;
+                            text-align: center;
+                            justify-content: center;
+                            font-size: 18px;
+                            /* top: 12px; */
+                            font-family: 'Baloo 2', cursive;
+                            color: white;
+                            background-color: black;
+                        }
+
+@media screen and (max-width: 1280px){
+
+    .container{
+
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 770px){
+
+    .label{
+
+        display: grid;
+        cursor: pointer;
+        grid-column: 3;
+        padding-right: 10px;
+
+    }
+
+    .content_nav{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
+
+    }
+
+    .nav_checkbox input:checked ~ .content_nav{
+
+        max-height: 500px;
+
+    }
+
+    .content_nav li{
+
+        padding: 15px 0px;
+
+    }
+
+    .category{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px auto;
+        
+    }
+
+    .rent-car{
+        /* height: 450px; */
+        overflow: scroll;
+        font-size: 8px;
+        
+    }
+
+    .para-auto-rent{
+        font-size: 10px;
+    }
+    .box{
+        width: 100%;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+   .img-footer{
+    display: grid;
+   }
+}
+
+@media screen and (max-width:552px){
+    .heading{
+        text-align: center;
+    }
+
+    .rent{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        grid-auto-rows: 200px;
+    }
+}
+@media screen and (max-width:404px){
+    .heading{
+        font-size: 10px;
+    
+    }
+
+    .btn-break{
+        display: block;
+    }
+
+}
+
+/* font-family: 'Poppins', sans-serif; */
